@@ -1,0 +1,79 @@
+1) What is Maven and how does it helps in DevOps?
+Maven is a build automation tool for DevOps and it helps DevOps in providing automation around the Build phase of the DevOps Life Cycle Management.
+
+2) What is a Maven Repository?
+A Maven repository is the storage place for the entire library jar, project jars and plugins, and all other project artifacts. This can be used by Maven easily.
+
+3) What are the different Maven Plugins?
+There are 2 types of Maven Plugins they are as follows,
+1. Build Plugins – They are executed during the build phase of the DevOps Life Cycle Management and configured through the <build/> element of the pom.xml.
+2. Reporting Plugins – They are executed during the site generation and must be configured as <reporting/> element of the pom.xml
+
+4) What are the different types of Maven repository?
+There are 3 different types of Maven repository they are central, local, and remote
+1. Local Repository: 
+Local repository refers to the machine of the developer where all the project material is saved.
+The local repository contains all the dependency jars.
+2. Remote Repository:
+The remote repository refers to the repository present on a server that is used when Maven needs to download dependencies.
+Whenever anything is required from the remote repository, it is first downloaded to the local repository, and then it is used.
+3. Central Repository:
+Central repository refers to the Maven community that comes into action when there is a need for dependencies, and those dependencies cannot be found in the local repository.
+
+5) What is POM in Maven?
+POM stands for Project Object Model. It is the fundamental unit of work in the Maven. It is an XML file. It consists of all the information about the projects and the build configuration details used to build the project. It resides in the base directory of the Maven as the pom.xml. 
+
+6) What is a Maven artifact?
+A Maven artifact is a file usually a jar that is stored in the Maven repository. It consists of an artifact group ID, an artifact ID, and a version string. The three uniquely form an artifact. The artifacts are called as project dependencies. A Maven build produces one or more such artifacts such as Complied jar and source jars.
+
+7) What are the different elements that Maven takes care of?
+In the process, it takes care of the following:
+
+Builds
+Dependencies
+Reports 
+Distribution
+Releases
+Mailing list
+
+8) What are the minimum required elements for POM? 
+The minimum required elements for POM are:
+
+project root
+modelVersion – should be 4.0.0
+groupId – project’s group id
+artifactId – artifact (project) id
+version – version of the artifact
+
+9) What is Clean, Default, and Site in Maven?
+There are three built-in build life cycles:
+
+Clean: The clean lifecycle looks after project cleaning.
+Default: The default lifecycle handles the project deployment.
+Site: The site lifecycle refers to the creation of the project’s site documentation.
+
+10)  Which command is used to build a Maven site? 
+- mvn site command is used to build a Maven site
+The resulting site, by default, is target/site/…
+
+11) What is meant by Maven Plugins?
+Maven plugins are essential features of Maven that are used to reuse the common build logic across several projects.
+The plugins are needed to carry out tasks like compiling code, testing them, creating JAR files, and documenting the projects.
+
+12) What is a Build Profile?
+Build profiles refer to the set of configuration values required to build a project using different configurations.
+Different build profiles are added to the POM files while enabling different builds.
+A build profile helps in customizing build for different environments.
+
+13) What are the different types of Build Profiles?
+There are three different types of build profiles:
+
+Per Project - defined in pom.xml
+Per - User - defined in Maven settings.xml
+Global - defined in Maven global settings.xml
+
+14) Where are Maven dependencies stored? 
+All the JARS, dependency files, etc. that are downloaded by Maven are saved in the Maven local repository.
+The Maven local repository is a folder location on the local system where all the artifacts are locally stored.
+
+
